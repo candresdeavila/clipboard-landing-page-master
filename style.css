@@ -41,10 +41,11 @@ p {
 
 /* Section Presentation _____________________________________________________________________*/
 .presentation {
-    background: 
-        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
         url("./bg-header-desktop.png") no-repeat center center/cover;
-    height: 100vh; /* Ajusta la altura según sea necesario */
+    height: 100vh;
+    /* Ajusta la altura según sea necesario */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,11 +61,11 @@ p {
 }
 
 .button {
-    background-color: var(--clr-Strong-Cyan);    
-    color: white;    
-    font-size: 16px;   
-    font-weight: bold;   
-    border: none;   
+    background-color: var(--clr-Strong-Cyan);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
     border-radius: 30px;
     padding: 12px 24px;
     cursor: pointer;
@@ -106,7 +107,7 @@ p {
 }
 
 .features-container {
-   margin-right: 100px;
+    margin-right: 100px;
 }
 
 .features-container h4 {
@@ -180,11 +181,8 @@ p {
 .logos-main-container {
     display: flex;
     justify-content: center;
-    /* Centrar horizontalmente */
     gap: 40px;
-    /* Espaciado entre columnas */
     flex-wrap: wrap;
-    /* Permitir que se acomoden en pantallas pequeñas */
     margin-bottom: 50px;
 }
 
@@ -192,13 +190,11 @@ p {
 .logos-container {
     flex: 1;
     max-width: 300px;
-    /* Ancho máximo por columna */
 }
 
 /* Iconos */
 .logos-container img {
     width: 40px;
-    /* Tamaño del icono */
     margin-bottom: 15px;
 }
 
@@ -229,47 +225,39 @@ p {
 .logos-img-container img {
     height: 40px;
     opacity: 0.7;
-    /* Hacerlas más sutiles */
 }
 
 /* Footer _________________________________________________________________________________*/
 footer {
     display: flex;
     justify-content: space-between;
-    /* Espaciado entre elementos */
     align-items: center;
     background-color: #f5f5f5;
-    /* Color de fondo gris claro */
     padding: 20px 50px;
     flex-wrap: wrap;
-    /* Asegura que los elementos se acomoden en pantallas pequeñas */
 }
 
 /* Logo */
 .footer-logo {
     width: 50px;
-    /* Tamaño del logo */
 }
 
 /* Contenedor de enlaces */
 .footer-links {
     display: flex;
     gap: 30px;
-    /* Espaciado entre enlaces */
     flex-wrap: wrap;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #666;
-    /* Color de texto gris */
     font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
     color: #333;
-    /* Oscurecer al pasar el mouse */
 }
 
 /* Contenedor de redes sociales */
@@ -281,12 +269,108 @@ footer {
 /* Iconos de redes sociales */
 .footer-social img {
     width: 20px;
-    /* Tamaño de los iconos */
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
 
 .footer-social img:hover {
     opacity: 0.7;
-    /* Efecto hover */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Sección de presentación */
+    .presentation {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        padding: 14px 0;
+    }
+
+    /* Sección Features */
+    .features {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .computer {
+        max-width: 100%;
+        left: 0;
+    }
+
+    .features-container {
+        margin: 0;
+    }
+
+    .features-text-container {
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    /* Sección Clipboard */
+    .clipboard {
+        padding: 20px;
+    }
+
+    /* Sección Logos */
+    .logos-main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        /* Espaciado entre logos */
+        padding: 40px 0;
+    }
+
+    .logos-container {
+        max-width: 100%;
+    }
+
+    .logos-img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* Espaciado entre cada logo */
+    }
+        .logos-img-container img {
+            max-width: 150px;
+            /* Ajusta según necesidad */
+            height: auto;
+            opacity: 0.6;
+            /* Simula el efecto de la imagen */
+        }
+
+        /* Footer */
+        footer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding: 30px 10px;
+        }
+
+        .footer-links {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-social {
+            justify-content: center;
+        }
+    
 }
