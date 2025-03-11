@@ -216,7 +216,7 @@ p {
 .logos-img-container {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
